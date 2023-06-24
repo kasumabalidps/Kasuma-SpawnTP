@@ -1,0 +1,31 @@
+name: SpawnTP
+description: A Minecraft Plugin simplifies teleporting to the spawn location.
+version: '${project.version}'
+
+author: kasumabalidps
+website: https://github.com/kasumabalidps
+
+main: net.kasumadps.spawntp.SpawnTP
+api-version: 1.19
+
+commands:
+  spawn:
+    description: Teleport to the Server spawn.
+    usage: /spawn
+  setspawn:
+    description: Set/Unset the Server spawn.
+    usage: /setspawn [ unset, [ normalize-view, normalize-position ]]
+  
+permissions:
+  spawntp.*:
+    description: Gives full access to the plugin.
+    default: op;
+    children:
+      spawntp.teleport: true
+      spawntp.admin: true
+  spawntp.teleport:
+    description: Teleport to the Server spawn.
+    default: true
+  spawntp.admin:
+    description: Set the Server spawn.
+    default: op

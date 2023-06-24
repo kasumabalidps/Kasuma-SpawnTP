@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.kasumadps.spawntp</groupId>
+  <artifactId>SpawnTP</artifactId>
+  <version>latest</version>
+  <packaging>jar</packaging>
+
+  <name>SpawnTP</name>
+  <description>A Minecraft Plugin simplifies teleporting to the spawn location.</description>
+  <url>https://github.com/kasumabalidps</url>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>./src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+
+  <dependencies>
+    <!-- Paper Api -->
+    <dependency>
+        <groupId>io.papermc.paper</groupId>
+        <artifactId>paper-api</artifactId>
+        <version>1.19.3-R0.1-SNAPSHOT</version>
+        <scope>provided</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.26</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <!-- https://nexus.parzival.space/ -->
+    <repository>
+      <id>parzival-space</id>
+      <url>https://nexus.parzival.space/repository/maven-public/</url>
+    </repository>
+    <!-- https://repo.onarandombox.com/ -->
+    <repository>
+      <id>OnARandomBox</id>
+      <url>https://repo.onarandombox.com/content/groups/public/</url>
+    </repository>
+    <!-- https://repo.papermc.io/ -->
+    <repository>
+      <id>papermc-repo</id>
+      <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>parzival-space</id>
+      <url>https://nexus.parzival.space/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>parzival-space</id>
+      <url>https://nexus.parzival.space/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>

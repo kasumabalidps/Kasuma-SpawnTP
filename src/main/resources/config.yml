@@ -1,0 +1,7 @@
+general:
+  location:
+
+locale:
+  missingPermission: "You dont have required permission"
+  spawnNotSet: "Spawn not set"
+  spawnSet: "Spawn location set-up."
