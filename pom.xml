@@ -10,7 +10,7 @@
   <packaging>jar</packaging>
 
   <name>SpawnTP</name>
-  <description>A Minecraft Plugin simplifies teleporting to the spawn location.</description>
+  <description>Minecraft plugin can help to make Spawn on Your Server.</description>
   <url>https://github.com/kasumabalidps</url>
 
   <properties>
@@ -29,7 +29,6 @@
   </build>
 
   <dependencies>
-    <!-- Paper Api -->
     <dependency>
         <groupId>io.papermc.paper</groupId>
         <artifactId>paper-api</artifactId>
@@ -37,7 +36,6 @@
         <scope>provided</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -47,17 +45,14 @@
   </dependencies>
 
   <repositories>
-    <!-- https://nexus.parzival.space/ -->
     <repository>
       <id>parzival-space</id>
       <url>https://nexus.parzival.space/repository/maven-public/</url>
     </repository>
-    <!-- https://repo.onarandombox.com/ -->
     <repository>
       <id>OnARandomBox</id>
       <url>https://repo.onarandombox.com/content/groups/public/</url>
     </repository>
-    <!-- https://repo.papermc.io/ -->
     <repository>
       <id>papermc-repo</id>
       <url>https://repo.papermc.io/repository/maven-public/</url>
